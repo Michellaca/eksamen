@@ -8,35 +8,35 @@
 @import url("https://use.typekit.net/buo6iyo.css");
 /* font-family: costa, sans-serif; font-style: normal; font-weight: 300; */
 @import url("https://use.typekit.net/buo6iyo.css");
+
 /* font-family: costa, sans-serif; font-style: normal; font-weight: 300; */
 
 
 
 /* Variabler gemmes*/
 :root {
-  /* farver */
+
+/* farver */
   --yellow: #fff3ce;
   --aqua: #C9DEDD;
   --green: #3F5A40;
   --blue: #1D2472;
   --red: #CD4F42;
-  --pink: #CD4F42;
+  --pink: ##FFE5E3;
 
 
-  /* fonte */
+/* fonte */
   --overskrift:  'costa', sans-serif; /* overskrifter */
-  --brødtekst: /* brødtekst */
+  --brødtekst: 'costa', sans-serif; /* brødtekst */
 }
-
 
 /* typografi */
 h1 {
   font-family: var(--overskrift);
   font-weight: 700;
-  font-size:
 }
 
 h2{
   font-family: var(--brødtekst)
-  font-size:
+  font-weight: 400;
 }
