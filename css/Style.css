@@ -8,8 +8,8 @@
 @import url("https://use.typekit.net/buo6iyo.css");
 /* font-family: costa, sans-serif; font-style: normal; font-weight: 300; */
 @import url("https://use.typekit.net/buo6iyo.css");
-
-/* font-family: costa, sans-serif; font-style: normal; font-weight: 300; */
+/* font-family: Ballare, sans-serif; font-style: normal; font-weight: 400; */
+@import url("https://use.typekit.net/buo6iyo.css");
 
 
 
@@ -22,21 +22,65 @@
   --green: #3F5A40;
   --blue: #1D2472;
   --red: #CD4F42;
-  --pink: ##FFE5E3;
+  --pink: #FFE5E3;
 
 
 /* fonte */
-  --overskrift:  'costa', sans-serif; /* overskrifter */
+  --overskrift: 'costa', sans-serif; /* overskrifter */
   --brødtekst: 'costa', sans-serif; /* brødtekst */
+  --ballare: 'ballare', sans-serif /* */
 }
 
 /* typografi */
-h1 {
+h1{
   font-family: var(--overskrift);
   font-weight: 700;
 }
 
-h2{
+p{
   font-family: var(--brødtekst)
   font-weight: 400;
 }
+
+/*navbar*/
+.topnav {
+  overflow: hidden;
+  background-color: var(--pink);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 45px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--blue);
+  font-family: var(--brødtekst);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: var(--yellow);;
+  color: var(--blue);
+}
+
+
+/*********** indhold ************/
+
+
+
+
+
+
+/* Mobil, 768px and down) */
+@media only screen and (max-width: 768px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Big screen (1200px and up) */
+@media only screen and (min-width: 1200px) {}
