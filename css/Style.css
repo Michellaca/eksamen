@@ -31,15 +31,22 @@
   --ballare: 'ballare', sans-serif /* */
 }
 
+/* baggrund */
+body {
+  background-color: var(--pink);
+}
+
 /* typografi */
 h1{
   font-family: var(--overskrift);
   font-weight: 700;
+  text-align: center;
 }
 
 p{
-  font-family: var(--brødtekst)
+  font-family: var(--brødtekst);
   font-weight: 400;
+  text-align: center;
 }
 
 /*navbar*/
@@ -72,7 +79,35 @@ p{
 /*********** indhold ************/
 
 
+.forsidemenu {
+  font-weight: lighter;
+  padding: 10px;
+}
 
+#topbillede {
+  display: none;
+}
+
+#slangetop {
+  display: none;
+}
+
+#forsidetop a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+#forsidetop hr {
+  max-width: 50%;
+}
+
+#logotilforsidetop {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10%;
+}
 
 
 
@@ -83,4 +118,57 @@ p{
 @media only screen and (min-width: 768px) {}
 
 /* Big screen (1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+  body {
+    background-color: var(--aqua);
+  }
+
+  #topbillede {
+    display: block;
+    margin-left: 10%;
+  }
+
+  #forsidetop {
+  display: flex;
+
+  }
+
+  .forsidemenu {
+    font-weight: lighter;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 10%;
+  }
+
+  #forsidetop hr {
+    max-width: 50%;
+    margin-left: 30%;
+  }
+
+  .topbilleder {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 10%;
+  }
+
+  #logotilforsidetop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30%;
+  }
+
+  #slangetop {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-bottom: 10%;
+  }
+
+
+
+  }
+}
