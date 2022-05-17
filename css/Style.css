@@ -49,31 +49,77 @@ p{
   text-align: center;
 }
 
-/*navbar*/
-.topnav {
-  overflow: hidden;
-  background-color: var(--pink);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 45px;
+/* Generel opsætning af siderne */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.topnav a {
-  float: left;
+
+/* Navigationsbar mobil */
+header {
+  background-color: var(--aqua);
+}
+
+li {
+  list-style: none;
+}
+
+a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.hamburger{
   display: block;
-  color: var(--blue);
-  font-family: var(--brødtekst);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
+  cursor: pointer;
 }
 
-.topnav a:hover {
-  background-color: var(--yellow);;
-  color: var(--blue);
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  --webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--red);
 }
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--pink);
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-item{
+  margin: 16px 0;
+}
+
+.nav-menu.active{
+  left: 0;
+}
+
+
+
 
 
 /*********** indhold ************/
@@ -112,7 +158,12 @@ p{
 
 
 /* Mobil, 768px and down) */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+
+
+
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
@@ -124,6 +175,43 @@ p{
     background-color: var(--aqua);
   }
 
+
+/* Navigationsbar styles */
+
+
+header {
+  background-color: var(--pink);
+}
+
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}
+
+
+.nav-link:hover{
+  color: var(--aqua);
+}
+
+.hamburger{
+  display: none;
+}
+
+
+
+
+/* Indhold 1 styles */
   #topbillede {
     display: block;
     margin-left: 10%;

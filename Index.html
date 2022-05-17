@@ -12,18 +12,41 @@
 
   <!-- favicon = ikon i faneblad / browser -->
   <link rel="icon" type="image/x-icon" href=""/>
+
+
+  <!-- link til AOS library style sheet -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
 </head>
 
 <body>
-  <div class="topnav" id="myTopnav">
-    <a href="index.html"><img src="img/logo.png" alt="Fryden logo" style="width: 120px; height:50px;"></a>
-    <a href="#">Om Fryden</a>
-    <a href="#">Kaffekort</a>
-    <a href="#">Produkter</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+
+  <!-- Navigationsbar -->
+  <header>
+    <nav class="navbar">
+
+      <a href="index.html" class="nav-logo"><img src="imageslogoskabelon.png" alt="Fryden logo"></a>
+
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="omfryden.html" class="nav-link">Om Fryden</a>
+      </li>
+      <li class="nav-item">
+        <a href="kaffekort.html" class="nav-link">Kaffekort</a>
+      </li>
+      <li class="nav-item">
+        <a href="produkter.html" class="nav-link">Fryd produkter</a>
+      </li>
+    </ul>
+
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+    </nav>
+  </header>
 
 
 
@@ -51,6 +74,6 @@
 
   </section>
 
-
+<script src="js/js.js"></script>
 
 </body>
