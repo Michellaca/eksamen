@@ -31,23 +31,49 @@
   --ballare: 'ballare', sans-serif /* */
 }
 
+/* Mobil */
 /* baggrund */
 body {
   background-color: var(--pink);
 }
+
 
 /* typografi */
 h1{
   font-family: var(--overskrift);
   font-weight: 700;
   text-align: center;
+  padding-top: 15%;
+}
+
+h2{
+  font-family: var(--overskrift);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10%;
 }
 
 p{
   font-family: var(--brødtekst);
   font-weight: 400;
   text-align: center;
+  margin-left: 12%;
+  margin-right:12%;
+  line-height: 1.8;
+  margin-top: 5%;
 }
+
+.footerp{
+  font-family: var(--brødtekst);
+  font-weight: 400;
+  text-align: center;
+  margin-left: 12%;
+  margin-right:12%;
+  line-height: 0.7;
+  margin-top: 5%;
+}
+
 
 /* Generel opsætning af siderne */
 *{
@@ -124,7 +150,6 @@ a{
 
 /*********** indhold ************/
 
-
 .forsidemenu {
   font-weight: lighter;
   padding: 10px;
@@ -155,18 +180,88 @@ a{
   margin-bottom: 10%;
 }
 
+/* Banner 2 - Om Fryden - Michella*/
+#intro{
+  background-color: var(--green);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+
+#intro h1{
+  color: var(--aqua);
+}
+
+.column-1 img{
+height: 300px;
+
+}
+
+.column-1 p{
+  color: var(--yellow);
+}
+
+/* Clear floats after the columns */
+#intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* banner 5: Kaffe af god kvalitet - Michella */
+#kaffe-kvalitet{
+  background-color: var(--yellow);
+}
+
+#kaffe-kvalitet h1{
+  color: var(--red);
+  text-align: center;
+}
+
+#kaffe-kvalitet h4{
+  font-family: Helvetica;
+  color: var(--aqua);
+  font-size: 115px;
+  margin-left: -20px;
+}
+
+#kaffe-kvalitet p{
+  color: var(--blue);
+  text-align: center;
+}
 
 
-/* Mobil, 768px and down) */
-@media only screen and (max-width: 768px) {
+/**** banner nr 6: nyeste posts ****/
+
+#nyesteposts {
+  background-color: var(--yellow);
+}
+#nyesteposts h1, p {
+  color: var(--blue);
+}
+
+
+/* Footer */
+.footer h2{
+  color: var(--blue);
+}
+
+.footer p{
+  color: var(--blue);
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
 
 
 
 
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
 
 /* Big screen (1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -174,6 +269,53 @@ a{
   body {
     background-color: var(--aqua);
   }
+
+  section {
+    padding-bottom: 6%;
+  }
+
+  /* typografi */
+  h1{
+    font-family: var(--overskrift);
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 50px;
+    text-align: left;
+    margin-left: 18%;
+  }
+
+  h2{
+    font-family: var(--overskrift);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 6%;
+    text-align: left;
+  }
+
+  p{
+    font-family: var(--brødtekst);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 18%;
+    margin-right:18%;
+    margin-top: 2%;
+    text-align: left;
+  }
+
+  .footerp{
+    font-family: var(--brødtekst);
+    font-weight: 400;
+    text-align: center;
+    margin-left: 12%;
+    margin-right:12%;
+    text-align: left;
+  }
+
+
+
 
 
 /* Navigationsbar styles */
@@ -211,7 +353,7 @@ header {
 
 
 
-/* Indhold 1 styles */
+/* Banner 1 styles */
   #topbillede {
     display: block;
     margin-left: 10%;
