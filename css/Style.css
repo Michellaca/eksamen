@@ -31,6 +31,7 @@
   --ballare: 'ballare', sans-serif /* */
 }
 
+<<<<<<< Updated upstream
 /* Mobil */
 /* baggrund */
 body {
@@ -38,25 +39,36 @@ body {
 }
 
 
+=======
+>>>>>>> Stashed changes
 /* typografi */
 h1{
   font-family: var(--overskrift);
   font-weight: 700;
+<<<<<<< Updated upstream
   text-align: center;
   padding-top: 15%;
+=======
+  font-size: 25px;
+>>>>>>> Stashed changes
 }
 
 h2{
   font-family: var(--overskrift);
   font-weight: 700;
+<<<<<<< Updated upstream
   font-size: 20px;
   text-align: center;
   padding-top: 10%;
+=======
+  font-size: 18px;
+>>>>>>> Stashed changes
 }
 
 p{
   font-family: var(--brødtekst);
   font-weight: 400;
+<<<<<<< Updated upstream
   text-align: center;
   margin-left: 12%;
   margin-right:12%;
@@ -81,69 +93,59 @@ p{
   margin: 0;
   box-sizing: border-box;
 }
-
-
-/* Navigationsbar mobil */
-header {
-  background-color: var(--aqua);
+=======
 }
 
-li {
-  list-style: none;
+>>>>>>> Stashed changes
+
+
+/*********** indhold ************/
+/* Intro sektion - Om Fryden */
+.intro{
+  background-color: var(--green);
 }
 
-a{
-    color: var(--blue);
-    text-decoration: none;
+* {
+  box-sizing: border-box;
 }
 
-.hamburger{
-  display: block;
-  cursor: pointer;
-}
+/* Create two equal columns that floats next to each other */
 
-.bar{
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  --webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--red);
+.intro {
+  padding-left: 15%;
+  padding-right: 15%;
 }
-
-.hamburger.active .bar:nth-child(2){
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1){
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3){
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.nav-menu{
-  position: fixed;
-  left: -100%;
-  top: 70px;
-  gap: 0;
-  flex-direction: column;
-  background-color: var(--pink);
-  width: 100%;
+.intro h1{
+  color: var(--aqua);
   text-align: center;
-  transition: 0.3s;
+  padding-top: 80px;
 }
 
-.nav-item{
-  margin: 16px 0;
+.column-1 img{
+height: 300px;
+
 }
 
-.nav-menu.active{
-  left: 0;
+.column-1 p{
+  color: var(--yellow);
+  text-align: center;
+  line-height: 1.8;
+  padding-top: 20px;
 }
 
+/* Clear floats after the columns */
+.intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Kaffe af god kvalitet sektion */
+.kaffe-kvalitet{
+  background-color: var(--yellow);
+}
+
+<<<<<<< Updated upstream
 
 
 
@@ -153,31 +155,44 @@ a{
 .forsidemenu {
   font-weight: lighter;
   padding: 10px;
+=======
+.kaffe-kvalitet h1{
+  color: var(--red);
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 15%;
+  padding-right: 15%;
+>>>>>>> Stashed changes
 }
 
-#topbillede {
-  display: none;
+.kaffe-kvalitet h4{
+  font-family: Helvetica;
+  color: var(--aqua);
+  font-size: 115px;
+  margin-left: -20px;
 }
 
-#slangetop {
-  display: none;
+.kaffe-kvalitet p{
+  color: var(--blue);
+  text-align: center;
+  line-height: 1.8;
+  padding-top: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-#forsidetop a {
-  text-decoration: none;
-  color: var(--green);
+
+/* Footer */
+.footer h2{
+  color: var(--blue);
+  text-align: center;
+  padding-top: 20px;
 }
 
-#forsidetop hr {
-  max-width: 50%;
-}
-
-#logotilforsidetop {
-  max-width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-bottom: 10%;
+.footer p{
+  color: var(--blue);
+  text-align: center;
+line-height: 1.7;
 }
 
 /* Banner 2 - Om Fryden - Michella*/
@@ -234,6 +249,7 @@ height: 300px;
 }
 
 
+<<<<<<< Updated upstream
 /**** banner nr 6: nyeste posts ****/
 
 #nyesteposts {
@@ -252,6 +268,8 @@ height: 300px;
 .footer p{
   color: var(--blue);
 }
+=======
+>>>>>>> Stashed changes
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -264,6 +282,7 @@ height: 300px;
 }
 
 /* Big screen (1200px and up) */
+<<<<<<< Updated upstream
 @media only screen and (min-width: 1200px) {
 
   body {
@@ -402,3 +421,6 @@ header {
 
   }
 }
+=======
+@media only screen and (min-width: 1200px) {}
+>>>>>>> Stashed changes
